@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Site Pessoal | Alex</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            padding: 22px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111c33;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        img {
+            width: 30%;;
+        }
+
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .inicio h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .inicio span {
+            color: #38bdf8;
+        }
+
+        .inicio p {
+            color: #cbd5e1;
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            width: 260px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            background: #263750;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+
+        .emoji {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .sobre {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* VÍDEO */
+        .video-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 15px;
+            background: #1e293b;
+            border-radius: 15px;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        footer {
+            background: #111c33;
+            padding: 25px;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            .inicio h1 {
+                font-size: 38px;
+            }
+
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <h2>Alex.</h2>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#gostos">Meus gostos</a>
+            <a href="#estudos">Estudos</a>
+            <a href="#video">Meu vídeo</a>
+        </nav>
+    </header>
+
+    <!-- INÍCIO -->
+    <div class="inicio" id="inicio">
+
+        <h1>Olá, eu sou <span>Alex!</span></h1>
+
+        <p>
+            Tenho 17 anos, gosto de futebol,
+            música e tecnologia.
+        </p>
+
+        <a href="#sobre" class="botao">
+            Conheça minha história
+        </a>
+
+    </div>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre">
+
+        <h2>Sobre mim</h2>
+
+        <div class="sobre">
+
+            <p>
+                Meu nome é Alex, tenho 17 anos e nasci no dia
+                23 de dezembro de 2008.
+
+                Sou uma pessoa que gosta de aprender coisas novas,
+                descobrir minhas habilidades e correr atrás dos
+                meus objetivos.
+
+                Atualmente estou fazendo o curso de
+                Desenvolvimento de Sistemas, onde estou aprendendo
+                mais sobre tecnologia e programação.
+
+                Gosto muito de jogar bola e também tenho talento
+                para cantar. Essas são algumas das coisas que
+                fazem parte de quem eu sou!
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MEUS GOSTOS -->
+    <section id="gostos">
+
+        <h2>O que eu gosto de fazer</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">⚽</div>
+                <h3>Futebol</h3>
+
+                <p>
+                    Gosto muito de jogar bola.
+                    O futebol é uma das minhas paixões
+                    e uma das atividades que mais gosto.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🎤</div>
+                <h3>Cantar</h3>
+
+                <p>
+                    Tenho talento para cantar e gosto
+                    de música. Cantar é uma das coisas
+                    que fazem parte de mim.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">💻</div>
+                <h3>Tecnologia</h3>
+
+                <p>
+                    Gosto de aprender sobre tecnologia
+                    e programação, buscando desenvolver
+                    novas habilidades.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTUDOS -->
+    <section id="estudos">
+
+        <h2>Meus estudos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">💻</div>
+
+                <h3>Desenvolvimento de Sistemas</h3>
+
+                <p>
+                    Atualmente estou fazendo um curso de
+                    Desenvolvimento de Sistemas, aprendendo
+                    sobre programação, criação de sites
+                    e desenvolvimento de projetos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEU VÍDEO -->
+    <section id="video">
+
+        <h2>Um pouco sobre mim</h2>
+
+        <img src="alex.jpeg">
+
+        <p>
+            Este é um vídeo especial para apresentar
+            um pouco mais sobre quem eu sou!
+        </p>
+
+        <div class="video-container">
+
+            <video controls>
+                <source
+                    src="WIN_20260520_10_02_57_Pro.mp4"
+                    type="video/mp4">
+
+                Seu navegador não suporta vídeos.
+            </video>
+
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>© 2026 Alex | Meu Site Pessoal</p>
+
+        <p>Feito com dedicação e criatividade!</p>
+
+    </footer>
+
+</body>
+</html>
